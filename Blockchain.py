@@ -34,10 +34,6 @@ def next_block(last_block):
 
     return Block(current_index, current_timestamp, current_data, current_hash)
 
-number_of_blocks = 19
-
-
-
 def create_blockchain():
     blockchain = [create_genesis_block()]
     for index in itertools.count():
